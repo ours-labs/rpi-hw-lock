@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rpi-hw-lock"
+version = "0.1.2"
+description = "Temporarily stop systemd services for exclusive Raspberry Pi hardware access"
+authors = [{name = "kazuki1729"}]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+keywords = ["raspberry-pi", "systemd", "gpio", "spi", "i2c", "uart", "lock", "mutex", "hardware"]
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Hardware",
+    "Intended Audience :: Developers",
+]
+
+[project.urls]
+Homepage = "https://github.com/ours-labs/rpi-hw-lock"
+Repository = "https://github.com/ours-labs/rpi-hw-lock"
+Issues = "https://github.com/ours-labs/rpi-hw-lock/issues"
+
+[tool.setuptools.packages.find]
+include = ["rpi_hw_lock*"]
+
+[tool.setuptools.package-data]
+rpi_hw_lock = ["py.typed"]
