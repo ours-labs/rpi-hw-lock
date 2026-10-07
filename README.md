@@ -1,5 +1,7 @@
 # rpi-hw-lock
 
+English | [日本語](README.ja.md)
+
 `rpi-hw-lock` is a lightweight Python library for safely obtaining exclusive access to Raspberry Pi hardware that is normally used by long-running systemd services.
 
 It temporarily stops selected services before a block of code accesses GPIO, SPI, I2C, or UART devices, then restarts only the services that were active originally. Cleanup runs even when the protected block raises an exception.
